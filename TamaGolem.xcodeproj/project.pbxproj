@@ -16,6 +16,11 @@
 		13DF356F1C64EBFD007DB7C2 /* UIImageDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF356E1C64EBFD007DB7C2 /* UIImageDim.swift */; };
 		13DF35711C6500B6007DB7C2 /* PetImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35701C6500B6007DB7C2 /* PetImg.swift */; };
 		13DF35731C65023A007DB7C2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35721C65023A007DB7C2 /* Model.swift */; };
+		13DF357A1C6519C8007DB7C2 /* bite.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35751C6519C8007DB7C2 /* bite.wav */; };
+		13DF357B1C6519C8007DB7C2 /* cave-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35761C6519C8007DB7C2 /* cave-music.mp3 */; };
+		13DF357C1C6519C8007DB7C2 /* death.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35771C6519C8007DB7C2 /* death.wav */; };
+		13DF357D1C6519C8007DB7C2 /* heart.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35781C6519C8007DB7C2 /* heart.wav */; };
+		13DF357E1C6519C8007DB7C2 /* skull.wav in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35791C6519C8007DB7C2 /* skull.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		13DF356E1C64EBFD007DB7C2 /* UIImageDim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageDim.swift; sourceTree = "<group>"; };
 		13DF35701C6500B6007DB7C2 /* PetImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetImg.swift; sourceTree = "<group>"; };
 		13DF35721C65023A007DB7C2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		13DF35751C6519C8007DB7C2 /* bite.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bite.wav; sourceTree = "<group>"; };
+		13DF35761C6519C8007DB7C2 /* cave-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "cave-music.mp3"; sourceTree = "<group>"; };
+		13DF35771C6519C8007DB7C2 /* death.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = death.wav; sourceTree = "<group>"; };
+		13DF35781C6519C8007DB7C2 /* heart.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = heart.wav; sourceTree = "<group>"; };
+		13DF35791C6519C8007DB7C2 /* skull.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = skull.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +72,7 @@
 		13525DEC1C620D2E00731A92 /* TamaGolem */ = {
 			isa = PBXGroup;
 			children = (
+				13DF35741C6519B2007DB7C2 /* Resources */,
 				13DF356D1C64EA65007DB7C2 /* Model */,
 				13DF356C1C64EA5A007DB7C2 /* View */,
 				13525DED1C620D2E00731A92 /* AppDelegate.swift */,
@@ -90,6 +101,18 @@
 				13DF35721C65023A007DB7C2 /* Model.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		13DF35741C6519B2007DB7C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				13DF35751C6519C8007DB7C2 /* bite.wav */,
+				13DF35761C6519C8007DB7C2 /* cave-music.mp3 */,
+				13DF35771C6519C8007DB7C2 /* death.wav */,
+				13DF35781C6519C8007DB7C2 /* heart.wav */,
+				13DF35791C6519C8007DB7C2 /* skull.wav */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13DF357E1C6519C8007DB7C2 /* skull.wav in Resources */,
+				13DF357A1C6519C8007DB7C2 /* bite.wav in Resources */,
+				13DF357C1C6519C8007DB7C2 /* death.wav in Resources */,
+				13DF357D1C6519C8007DB7C2 /* heart.wav in Resources */,
+				13DF357B1C6519C8007DB7C2 /* cave-music.mp3 in Resources */,
 				13525DF81C620D2E00731A92 /* LaunchScreen.storyboard in Resources */,
 				13DF35671C649A13007DB7C2 /* Assets.xcassets in Resources */,
 				13525DF31C620D2E00731A92 /* Main.storyboard in Resources */,

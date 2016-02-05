@@ -12,7 +12,7 @@ import UIKit
 extension UIImageView {
     
     func dimImgView(dimming b: Bool) {
-        self.alpha = b ? 0.2 : 1
+        self.alpha = b ? 0.4 : 1
     }
     
     func dimImgView(andDisable_dimming b:Bool) {

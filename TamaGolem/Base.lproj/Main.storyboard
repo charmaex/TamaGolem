@@ -43,7 +43,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-vd-EeA">
-                                <rect key="frame" x="43" y="103" width="260" height="165"/>
+                                <rect key="frame" x="-15" y="0.0" width="260" height="165"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-Uc-HSp">
                                         <rect key="frame" x="15" y="0.0" width="230" height="60"/>
@@ -72,7 +72,7 @@
                                         </subviews>
                                         <variation key="heightClass=compact" axis="vertical"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="79s-6f-wec">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="79s-6f-wec">
                                         <rect key="frame" x="0.0" y="85" width="260" height="80"/>
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-gs-YkY" customClass="DragImage" customModule="TamaGolem" customModuleProvider="target">
@@ -95,6 +95,70 @@
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APP-rT-UFm">
+                                <rect key="frame" x="135" y="225" width="330" height="150"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="c1D-FY-uJm">
+                                        <rect key="frame" x="0.0" y="0.0" width="330" height="150"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Character:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvg-HW-jKa">
+                                                <rect key="frame" x="37" y="0.0" width="257" height="45"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-JG-gzK">
+                                                <rect key="frame" x="0.0" y="50" width="330" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHs-Kf-CMN">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="WHs-Kf-CMN" secondAttribute="height" multiplier="1:1" id="kTs-bu-CnZ"/>
+                                                            <constraint firstAttribute="width" constant="100" id="tMD-Uv-KV2"/>
+                                                        </constraints>
+                                                        <state key="normal" image="golem"/>
+                                                        <connections>
+                                                            <action selector="playerGolem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w5b-OF-50W"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmn-4R-6p4">
+                                                        <rect key="frame" x="115" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="19k-14-tUo"/>
+                                                            <constraint firstAttribute="width" secondItem="Wmn-4R-6p4" secondAttribute="height" multiplier="1:1" id="3Ts-Pg-GBt"/>
+                                                        </constraints>
+                                                        <state key="normal" image="snail"/>
+                                                        <connections>
+                                                            <action selector="playerSnail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohW-3d-Qcl"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdw-IJ-CNM">
+                                                        <rect key="frame" x="230" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Xdw-IJ-CNM" secondAttribute="height" multiplier="1:1" id="4le-fJ-4qq"/>
+                                                            <constraint firstAttribute="width" constant="100" id="vbU-8m-DZT"/>
+                                                        </constraints>
+                                                        <state key="normal" image="miner"/>
+                                                        <connections>
+                                                            <action selector="playerMiner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzA-oo-QI7"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="c1D-FY-uJm" firstAttribute="leading" secondItem="APP-rT-UFm" secondAttribute="leading" id="1AK-Rx-JOc"/>
+                                    <constraint firstAttribute="trailing" secondItem="c1D-FY-uJm" secondAttribute="trailing" id="6Jr-nN-MHZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="c1D-FY-uJm" secondAttribute="bottom" id="HRA-xz-VsD"/>
+                                    <constraint firstItem="c1D-FY-uJm" firstAttribute="top" secondItem="APP-rT-UFm" secondAttribute="top" id="OEU-Ux-vdc"/>
+                                    <constraint firstAttribute="height" constant="150" id="Z70-bU-kzO"/>
+                                    <constraint firstItem="c1D-FY-uJm" firstAttribute="centerY" secondItem="APP-rT-UFm" secondAttribute="centerY" id="Zyv-D7-JFm"/>
+                                    <constraint firstItem="c1D-FY-uJm" firstAttribute="centerX" secondItem="APP-rT-UFm" secondAttribute="centerX" id="esK-Ew-0fx"/>
+                                    <constraint firstAttribute="width" constant="330" id="yiw-oo-xyN"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -111,6 +175,8 @@
                             <constraint firstItem="53W-SS-hj2" firstAttribute="top" secondItem="SAI-Gl-THe" secondAttribute="bottom" constant="-2" id="fvO-tQ-Kzc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="53W-SS-hj2" secondAttribute="bottom" id="iRd-A8-UIb"/>
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="mMO-rS-Yf3"/>
+                            <constraint firstItem="APP-rT-UFm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRU-Ma-63j"/>
+                            <constraint firstItem="APP-rT-UFm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sXC-vm-xg6"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="adR-Aq-Guz" secondAttribute="bottom" id="vBT-gN-xCr"/>
                             <constraint firstAttribute="trailing" secondItem="53W-SS-hj2" secondAttribute="trailing" id="vVH-Sv-daM"/>
                             <constraint firstItem="adR-Aq-Guz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wQe-av-5y6"/>
@@ -144,9 +210,13 @@
                         <outlet property="groundImg" destination="53W-SS-hj2" id="D3e-CD-a5a"/>
                         <outlet property="heartImg" destination="yh7-Mb-rCv" id="kiB-Hd-OxF"/>
                         <outlet property="petImg" destination="jlv-9v-CZa" id="i2T-3n-ew9"/>
+                        <outlet property="playerChooseMenu" destination="APP-rT-UFm" id="bJX-Mh-vZd"/>
                         <outlet property="skull1" destination="gbv-If-Mbm" id="xNZ-Vb-D5U"/>
                         <outlet property="skull2" destination="oEz-cY-dDo" id="iJS-IN-pEf"/>
                         <outlet property="skull3" destination="0en-dZ-fSq" id="ULa-HU-j77"/>
+                        <outletCollection property="skulls" destination="gbv-If-Mbm" collectionClass="NSMutableArray" id="1ML-tu-uQn"/>
+                        <outletCollection property="skulls" destination="oEz-cY-dDo" collectionClass="NSMutableArray" id="GC0-FF-Lxd"/>
+                        <outletCollection property="skulls" destination="0en-dZ-fSq" collectionClass="NSMutableArray" id="GV2-dm-MXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -157,10 +227,13 @@
     <resources>
         <image name="bg" width="128" height="128"/>
         <image name="food" width="95" height="98"/>
+        <image name="golem" width="250" height="250"/>
         <image name="golem_idle1" width="271" height="239"/>
         <image name="ground" width="128" height="128"/>
         <image name="heart" width="95" height="98"/>
+        <image name="miner" width="250" height="250"/>
         <image name="plant" width="103" height="52"/>
         <image name="skull" width="95" height="98"/>
+        <image name="snail" width="250" height="250"/>
     </resources>
 </document>
