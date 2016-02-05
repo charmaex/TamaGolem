@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="adR-Aq-Guz" customClass="BackgroundForImageView" customModule="TamaGolem" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="adR-Aq-Guz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plant" translatesAutoresizingMaskIntoConstraints="NO" id="SAI-Gl-THe">
@@ -29,23 +29,23 @@
                                     <constraint firstAttribute="width" secondItem="SAI-Gl-THe" secondAttribute="height" multiplier="103:52" id="lNy-48-aHv"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="53W-SS-hj2" customClass="BackgroundForImageView" customModule="TamaGolem" customModuleProvider="target">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="53W-SS-hj2">
                                 <rect key="frame" x="0.0" y="520" width="600" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="sOk-I2-Obg"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golem_idle1" translatesAutoresizingMaskIntoConstraints="NO" id="jlv-9v-CZa">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golem_idle1" translatesAutoresizingMaskIntoConstraints="NO" id="jlv-9v-CZa" customClass="PetImg" customModule="TamaGolem" customModuleProvider="target">
                                 <rect key="frame" x="166" y="239" width="322" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jlv-9v-CZa" secondAttribute="height" multiplier="322:293" id="T8w-Ir-v2V"/>
                                     <constraint firstAttribute="height" constant="293" id="i06-1a-Cud"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-vd-EeA">
-                                <rect key="frame" x="43" y="103" width="260" height="140"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-vd-EeA">
+                                <rect key="frame" x="43" y="103" width="260" height="165"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-Uc-HSp">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-Uc-HSp">
                                         <rect key="frame" x="15" y="0.0" width="230" height="60"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="skull" translatesAutoresizingMaskIntoConstraints="NO" id="gbv-If-Mbm">
@@ -72,17 +72,17 @@
                                         </subviews>
                                         <variation key="heightClass=compact" axis="vertical"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="79s-6f-wec">
-                                        <rect key="frame" x="0.0" y="60" width="260" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="79s-6f-wec">
+                                        <rect key="frame" x="0.0" y="85" width="260" height="80"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-gs-YkY">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-gs-YkY" customClass="DragImage" customModule="TamaGolem" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="IkT-Zt-Y7V"/>
                                                     <constraint firstAttribute="width" secondItem="Ehl-gs-YkY" secondAttribute="height" multiplier="1:1" id="yDD-CQ-vij"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="yh7-Mb-rCv">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="yh7-Mb-rCv" customClass="DragImage" customModule="TamaGolem" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="80" height="80"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yh7-Mb-rCv" secondAttribute="height" multiplier="1:1" id="4hy-4J-cCS"/>
@@ -140,7 +140,13 @@
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="adR-Aq-Guz" id="VyN-Oq-AQ8"/>
+                        <outlet property="foodImg" destination="Ehl-gs-YkY" id="48L-ks-XkY"/>
                         <outlet property="groundImg" destination="53W-SS-hj2" id="D3e-CD-a5a"/>
+                        <outlet property="heartImg" destination="yh7-Mb-rCv" id="kiB-Hd-OxF"/>
+                        <outlet property="petImg" destination="jlv-9v-CZa" id="i2T-3n-ew9"/>
+                        <outlet property="skull1" destination="gbv-If-Mbm" id="xNZ-Vb-D5U"/>
+                        <outlet property="skull2" destination="oEz-cY-dDo" id="iJS-IN-pEf"/>
+                        <outlet property="skull3" destination="0en-dZ-fSq" id="ULa-HU-j77"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

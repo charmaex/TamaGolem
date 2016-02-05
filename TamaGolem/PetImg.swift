@@ -1,5 +1,5 @@
 //
-//  BackgroundForView.swift
+//  GolemImg.swift
 //  TamaGolem
 //
 //  Created by Jan Dammshäuser on 05.02.16.
@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
-class BackgroundForImageView: UIImageView {
+class PetImg: UIImageView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -18,12 +19,5 @@ class BackgroundForImageView: UIImageView {
         super.init(coder: aDecoder)
     }
     
-    func setBackgroundImage(imgName: String) {
-        guard let image = UIImage(named: imgName) else { return }
-        let color = UIColor(patternImage: image)
-        
-        self.image = nil
-        self.backgroundColor = color
-    }
     
 }

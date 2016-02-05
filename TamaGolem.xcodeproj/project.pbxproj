@@ -12,8 +12,10 @@
 		13525DF31C620D2E00731A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13525DF11C620D2E00731A92 /* Main.storyboard */; };
 		13525DF81C620D2E00731A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13525DF61C620D2E00731A92 /* LaunchScreen.storyboard */; };
 		13DF35671C649A13007DB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35661C649A13007DB7C2 /* Assets.xcassets */; };
-		13DF35691C64B21D007DB7C2 /* BackgroundForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */; };
 		13DF356B1C64E9B9007DB7C2 /* DragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF356A1C64E9B9007DB7C2 /* DragImage.swift */; };
+		13DF356F1C64EBFD007DB7C2 /* UIImageDim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF356E1C64EBFD007DB7C2 /* UIImageDim.swift */; };
+		13DF35711C6500B6007DB7C2 /* PetImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35701C6500B6007DB7C2 /* PetImg.swift */; };
+		13DF35731C65023A007DB7C2 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35721C65023A007DB7C2 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +26,10 @@
 		13525DF71C620D2E00731A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13525DF91C620D2E00731A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13DF35661C649A13007DB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundForView.swift; sourceTree = "<group>"; };
 		13DF356A1C64E9B9007DB7C2 /* DragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImage.swift; sourceTree = "<group>"; };
+		13DF356E1C64EBFD007DB7C2 /* UIImageDim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageDim.swift; sourceTree = "<group>"; };
+		13DF35701C6500B6007DB7C2 /* PetImg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetImg.swift; sourceTree = "<group>"; };
+		13DF35721C65023A007DB7C2 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +62,34 @@
 		13525DEC1C620D2E00731A92 /* TamaGolem */ = {
 			isa = PBXGroup;
 			children = (
+				13DF356D1C64EA65007DB7C2 /* Model */,
+				13DF356C1C64EA5A007DB7C2 /* View */,
 				13525DED1C620D2E00731A92 /* AppDelegate.swift */,
 				13525DEF1C620D2E00731A92 /* ViewController.swift */,
 				13525DF11C620D2E00731A92 /* Main.storyboard */,
-				13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */,
 				13DF35661C649A13007DB7C2 /* Assets.xcassets */,
 				13525DF61C620D2E00731A92 /* LaunchScreen.storyboard */,
 				13525DF91C620D2E00731A92 /* Info.plist */,
-				13DF356A1C64E9B9007DB7C2 /* DragImage.swift */,
 			);
 			path = TamaGolem;
+			sourceTree = "<group>";
+		};
+		13DF356C1C64EA5A007DB7C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				13DF356A1C64E9B9007DB7C2 /* DragImage.swift */,
+				13DF356E1C64EBFD007DB7C2 /* UIImageDim.swift */,
+				13DF35701C6500B6007DB7C2 /* PetImg.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		13DF356D1C64EA65007DB7C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13DF35721C65023A007DB7C2 /* Model.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				13525DF01C620D2E00731A92 /* ViewController.swift in Sources */,
-				13DF35691C64B21D007DB7C2 /* BackgroundForView.swift in Sources */,
 				13525DEE1C620D2E00731A92 /* AppDelegate.swift in Sources */,
+				13DF356F1C64EBFD007DB7C2 /* UIImageDim.swift in Sources */,
+				13DF35731C65023A007DB7C2 /* Model.swift in Sources */,
 				13DF356B1C64E9B9007DB7C2 /* DragImage.swift in Sources */,
+				13DF35711C6500B6007DB7C2 /* PetImg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

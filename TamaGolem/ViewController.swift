@@ -10,8 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var bgImg: BackgroundForImageView!
-    @IBOutlet weak var groundImg: BackgroundForImageView!
+    @IBOutlet weak var bgImg: UIImageView!
+    @IBOutlet weak var groundImg: UIImageView!
+    @IBOutlet weak var skull1: UIImageView!
+    @IBOutlet weak var skull2: UIImageView!
+    @IBOutlet weak var skull3: UIImageView!
+    @IBOutlet weak var heartImg: DragImage!
+    @IBOutlet weak var foodImg: DragImage!
+    @IBOutlet weak var petImg: PetImg!
     
     override func viewDidLoad() {
         super.viewDidLoad()
