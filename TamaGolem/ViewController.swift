@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bgImg: BackgroundForImageView!
+    @IBOutlet weak var groundImg: BackgroundForImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        bgImg.setBackgroundImage("bg.png")
+        groundImg.setBackgroundImage("ground.png")
     }
     
     

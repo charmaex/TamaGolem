@@ -10,8 +10,10 @@
 		13525DEE1C620D2E00731A92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13525DED1C620D2E00731A92 /* AppDelegate.swift */; };
 		13525DF01C620D2E00731A92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13525DEF1C620D2E00731A92 /* ViewController.swift */; };
 		13525DF31C620D2E00731A92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13525DF11C620D2E00731A92 /* Main.storyboard */; };
-		13525DF51C620D2E00731A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13525DF41C620D2E00731A92 /* Assets.xcassets */; };
 		13525DF81C620D2E00731A92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13525DF61C620D2E00731A92 /* LaunchScreen.storyboard */; };
+		13DF35671C649A13007DB7C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13DF35661C649A13007DB7C2 /* Assets.xcassets */; };
+		13DF35691C64B21D007DB7C2 /* BackgroundForView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */; };
+		13DF356B1C64E9B9007DB7C2 /* DragImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DF356A1C64E9B9007DB7C2 /* DragImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +21,11 @@
 		13525DED1C620D2E00731A92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13525DEF1C620D2E00731A92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13525DF21C620D2E00731A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		13525DF41C620D2E00731A92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13525DF71C620D2E00731A92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13525DF91C620D2E00731A92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13DF35661C649A13007DB7C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundForView.swift; sourceTree = "<group>"; };
+		13DF356A1C64E9B9007DB7C2 /* DragImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +61,11 @@
 				13525DED1C620D2E00731A92 /* AppDelegate.swift */,
 				13525DEF1C620D2E00731A92 /* ViewController.swift */,
 				13525DF11C620D2E00731A92 /* Main.storyboard */,
-				13525DF41C620D2E00731A92 /* Assets.xcassets */,
+				13DF35681C64B21D007DB7C2 /* BackgroundForView.swift */,
+				13DF35661C649A13007DB7C2 /* Assets.xcassets */,
 				13525DF61C620D2E00731A92 /* LaunchScreen.storyboard */,
 				13525DF91C620D2E00731A92 /* Info.plist */,
+				13DF356A1C64E9B9007DB7C2 /* DragImage.swift */,
 			);
 			path = TamaGolem;
 			sourceTree = "<group>";
@@ -124,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13525DF81C620D2E00731A92 /* LaunchScreen.storyboard in Resources */,
-				13525DF51C620D2E00731A92 /* Assets.xcassets in Resources */,
+				13DF35671C649A13007DB7C2 /* Assets.xcassets in Resources */,
 				13525DF31C620D2E00731A92 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13525DF01C620D2E00731A92 /* ViewController.swift in Sources */,
+				13DF35691C64B21D007DB7C2 /* BackgroundForView.swift in Sources */,
 				13525DEE1C620D2E00731A92 /* AppDelegate.swift in Sources */,
+				13DF356B1C64E9B9007DB7C2 /* DragImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +295,7 @@
 				13525DFE1C620D2E00731A92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
