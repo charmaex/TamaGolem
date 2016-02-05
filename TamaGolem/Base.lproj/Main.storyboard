@@ -22,7 +22,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="adR-Aq-Guz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plant" translatesAutoresizingMaskIntoConstraints="NO" id="SAI-Gl-THe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="SAI-Gl-THe">
                                 <rect key="frame" x="20" y="487" width="69" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="3zz-nd-m6g"/>
@@ -35,11 +35,11 @@
                                     <constraint firstAttribute="height" constant="80" id="sOk-I2-Obg"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golem_idle1" translatesAutoresizingMaskIntoConstraints="NO" id="jlv-9v-CZa" customClass="PetImg" customModule="TamaGolem" customModuleProvider="target">
-                                <rect key="frame" x="166" y="239" width="322" height="293"/>
+                            <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="golem_idle1" translatesAutoresizingMaskIntoConstraints="NO" id="jlv-9v-CZa" customClass="PetImg" customModule="TamaGolem" customModuleProvider="target">
+                                <rect key="frame" x="177" y="252" width="300" height="273"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jlv-9v-CZa" secondAttribute="height" multiplier="322:293" id="T8w-Ir-v2V"/>
-                                    <constraint firstAttribute="height" constant="293" id="i06-1a-Cud"/>
+                                    <constraint firstAttribute="height" constant="273" id="i06-1a-Cud"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="equalSpacing" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="hS8-vd-EeA">
@@ -107,7 +107,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bfe-JG-gzK">
-                                                <rect key="frame" x="0.0" y="50" width="330" height="100"/>
+                                                <rect key="frame" x="58" y="50" width="215" height="100"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHs-Kf-CMN">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -129,17 +129,6 @@
                                                         <state key="normal" image="snail"/>
                                                         <connections>
                                                             <action selector="playerSnail:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohW-3d-Qcl"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdw-IJ-CNM">
-                                                        <rect key="frame" x="230" y="0.0" width="100" height="100"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Xdw-IJ-CNM" secondAttribute="height" multiplier="1:1" id="4le-fJ-4qq"/>
-                                                            <constraint firstAttribute="width" constant="100" id="vbU-8m-DZT"/>
-                                                        </constraints>
-                                                        <state key="normal" image="miner"/>
-                                                        <connections>
-                                                            <action selector="playerMiner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FzA-oo-QI7"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -165,7 +154,7 @@
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2mU-Fw-VdF"/>
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="603-dA-pGS"/>
                             <constraint firstAttribute="trailing" secondItem="adR-Aq-Guz" secondAttribute="trailing" id="BZt-5P-oMz"/>
-                            <constraint firstItem="53W-SS-hj2" firstAttribute="top" secondItem="jlv-9v-CZa" secondAttribute="bottom" constant="-12" id="Jvg-KA-Lvc"/>
+                            <constraint firstItem="53W-SS-hj2" firstAttribute="top" secondItem="jlv-9v-CZa" secondAttribute="bottom" constant="-5" id="Jvg-KA-Lvc"/>
                             <constraint firstItem="jlv-9v-CZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="27" id="NmW-l1-OwP"/>
                             <constraint firstItem="53W-SS-hj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OXk-er-4re"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hS8-vd-EeA" secondAttribute="trailing" id="P5F-6G-jaj"/>
@@ -206,6 +195,7 @@
                     </view>
                     <connections>
                         <outlet property="bgImg" destination="adR-Aq-Guz" id="VyN-Oq-AQ8"/>
+                        <outlet property="flowerRockImg" destination="SAI-Gl-THe" id="BWD-P4-wC8"/>
                         <outlet property="foodImg" destination="Ehl-gs-YkY" id="48L-ks-XkY"/>
                         <outlet property="groundImg" destination="53W-SS-hj2" id="D3e-CD-a5a"/>
                         <outlet property="heartImg" destination="yh7-Mb-rCv" id="kiB-Hd-OxF"/>
@@ -231,8 +221,7 @@
         <image name="golem_idle1" width="271" height="239"/>
         <image name="ground" width="128" height="128"/>
         <image name="heart" width="95" height="98"/>
-        <image name="miner" width="250" height="250"/>
-        <image name="plant" width="103" height="52"/>
+        <image name="rock" width="83" height="90"/>
         <image name="skull" width="95" height="98"/>
         <image name="snail" width="250" height="250"/>
     </resources>

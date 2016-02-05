@@ -15,7 +15,7 @@ extension UIImageView {
         self.alpha = b ? 0.4 : 1
     }
     
-    func dimImgView(andDisable_dimming b:Bool) {
+    func dimImgViewAndDisable(dimming b:Bool) {
         self.userInteractionEnabled = false == b
         dimImgView(dimming: b)
     }

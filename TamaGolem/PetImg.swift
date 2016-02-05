@@ -30,10 +30,6 @@ class PetImg: UIImageView {
         _playerName = name
         _playerDeadImageCount = deadCount
         
-        idleAnimation()
-    }
-    
-    func idleAnimation() {
         animate(.Idle)
     }
     
