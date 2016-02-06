@@ -19,9 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="adR-Aq-Guz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="SAI-Gl-THe">
                                 <rect key="frame" x="20" y="487" width="69" height="35"/>
                                 <constraints>
@@ -153,12 +150,10 @@
                         <constraints>
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2mU-Fw-VdF"/>
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="603-dA-pGS"/>
-                            <constraint firstAttribute="trailing" secondItem="adR-Aq-Guz" secondAttribute="trailing" id="BZt-5P-oMz"/>
                             <constraint firstItem="53W-SS-hj2" firstAttribute="top" secondItem="jlv-9v-CZa" secondAttribute="bottom" constant="-5" id="Jvg-KA-Lvc"/>
                             <constraint firstItem="jlv-9v-CZa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="27" id="NmW-l1-OwP"/>
                             <constraint firstItem="53W-SS-hj2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OXk-er-4re"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hS8-vd-EeA" secondAttribute="trailing" id="P5F-6G-jaj"/>
-                            <constraint firstItem="adR-Aq-Guz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="RlF-7b-b7o"/>
                             <constraint firstItem="SAI-Gl-THe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wa3-qB-8SS"/>
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YC8-Tg-cr6"/>
                             <constraint firstItem="53W-SS-hj2" firstAttribute="top" secondItem="SAI-Gl-THe" secondAttribute="bottom" constant="-2" id="fvO-tQ-Kzc"/>
@@ -166,9 +161,7 @@
                             <constraint firstItem="hS8-vd-EeA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="mMO-rS-Yf3"/>
                             <constraint firstItem="APP-rT-UFm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nRU-Ma-63j"/>
                             <constraint firstItem="APP-rT-UFm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sXC-vm-xg6"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="adR-Aq-Guz" secondAttribute="bottom" id="vBT-gN-xCr"/>
                             <constraint firstAttribute="trailing" secondItem="53W-SS-hj2" secondAttribute="trailing" id="vVH-Sv-daM"/>
-                            <constraint firstItem="adR-Aq-Guz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wQe-av-5y6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -194,7 +187,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="bgImg" destination="adR-Aq-Guz" id="VyN-Oq-AQ8"/>
                         <outlet property="flowerRockImg" destination="SAI-Gl-THe" id="BWD-P4-wC8"/>
                         <outlet property="foodImg" destination="Ehl-gs-YkY" id="48L-ks-XkY"/>
                         <outlet property="groundImg" destination="53W-SS-hj2" id="D3e-CD-a5a"/>
@@ -215,7 +207,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="128" height="128"/>
         <image name="food" width="95" height="98"/>
         <image name="golem" width="250" height="250"/>
         <image name="golem_idle1" width="271" height="239"/>

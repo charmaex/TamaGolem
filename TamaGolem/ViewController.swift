@@ -15,7 +15,6 @@ class ViewController: UIViewController {
     
     var currentAction: Int = 0
     
-    @IBOutlet weak var bgImg: UIImageView!
     @IBOutlet weak var groundImg: UIImageView!
     @IBOutlet weak var skull1: UIImageView!
     @IBOutlet weak var skull2: UIImageView!
@@ -33,7 +32,7 @@ class ViewController: UIViewController {
         let player = model.player
         petImg.setPlayer(player.0, deadCount: player.1)
         
-        bgImg.setBackgroundImage("bg.png")
+        view.setBackgroundImage("bg.png")
         groundImg.setBackgroundImage("ground.png")
         
         heartImg.targetView = petImg

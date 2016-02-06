@@ -20,11 +20,18 @@ extension UIImageView {
         dimImgView(dimming: b)
     }
     
+    override func setBackgroundImage(imgName: String) {
+        super.setBackgroundImage(imgName)
+        
+        self.image = nil
+    }
+}
+
+extension UIView {
     func setBackgroundImage(imgName: String) {
         guard let image = UIImage(named: imgName) else { return }
         let color = UIColor(patternImage: image)
         
-        self.image = nil
         self.backgroundColor = color
     }
 }
