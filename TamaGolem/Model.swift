@@ -20,7 +20,7 @@ class Model: NSObject {
     private var sfxSkull: AVAudioPlayer!
     private var sfxDead: AVAudioPlayer!
     
-    private var _player: Int?
+    private var _pet: Pets?
     private var _timer: NSTimer!
     private var _lifes: Int = 0
     
@@ -35,11 +35,19 @@ class Model: NSObject {
         return lifes >= MAX_LIFES
     }
     
-    var player: (String, Int) {
-        guard let index = _player else {
+    var pet: (String, Int) {
+        guard let index = _pet?.rawValue else {
             return PLAYER_LIST[0]
         }
         return PLAYER_LIST[index]
+    }
+    
+    enum ActionsForPet: Int {
+        case Food, Heart
+    }
+    
+    enum Pets: Int {
+        case Golem, Snail
     }
     
     override init() {
@@ -52,18 +60,20 @@ class Model: NSObject {
             try sfxDead = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("death", ofType: "wav")!))
             
             musicBG.prepareToPlay()
-            musicBG.play()
             sfxFood.prepareToPlay()
             sfxHeart.prepareToPlay()
             sfxSkull.prepareToPlay()
+            sfxDead.prepareToPlay()
+            
+            musicBG.play()
         } catch let err as NSError {
             print(err.description)
         }
     }
     
     
-    func startGame(withPlayer index: Int) {
-        _player = index
+    func startGame(withPet pet: Pets) {
+        _pet = pet
         _lifes = 0
         startTimer()
     }
@@ -78,6 +88,8 @@ class Model: NSObject {
             if lifes == MAX_LIFES {
                 sfxDead.play()
                 stopTimer()
+            } else {
+                startTimer()
             }
             
             petLostLife()
@@ -89,10 +101,12 @@ class Model: NSObject {
     func itemDropped(currentAction: Int) {
         _itemDropped = true
         
-        if currentAction == 0 {
+        switch currentAction {
+        case ActionsForPet.Food.rawValue:
             sfxFood.play()
-        } else {
+        case ActionsForPet.Heart.rawValue:
             sfxHeart.play()
+        default: break
         }
         
         startTimer()
@@ -107,7 +121,9 @@ class Model: NSObject {
     private func startTimer() {
         stopTimer()
         
-        _timer = NSTimer.scheduledTimerWithTimeInterval(3.0, target: self, selector: "changeGame", userInfo: nil, repeats: true)
+        let timeInterval = Double(MAX_LIFES - lifes)
+        
+        _timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "changeGame", userInfo: nil, repeats: true)
     }
     
     private func petHappy() {

@@ -29,8 +29,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let player = model.player
-        petImg.setPlayer(player.0, deadCount: player.1)
+        setPet()
         
         view.setBackgroundImage("bg.png")
         groundImg.setBackgroundImage("ground.png")
@@ -49,13 +48,20 @@ class ViewController: UIViewController {
         
         currentAction = Int(rand)
         
-        if rand == 0 {
+        switch currentAction {
+        case Model.ActionsForPet.Food.rawValue:
             foodImg.dimImgViewAndDisable(dimming: false)
             heartImg.dimImgViewAndDisable(dimming: true)
-        } else {
+        case Model.ActionsForPet.Heart.rawValue:
             foodImg.dimImgViewAndDisable(dimming: true)
             heartImg.dimImgViewAndDisable(dimming: false)
+        default: break
         }
+    }
+    
+    func setPet() {
+        let pet = model.pet
+        petImg.setPlayer(pet.0, deadCount: pet.1)
     }
     
     func petLostLife() {
@@ -87,7 +93,7 @@ class ViewController: UIViewController {
         model.itemDropped(currentAction)
     }
     
-    func startGame(index: Int, image: UIImage) {
+    func startGame(pet: Model.Pets, image: UIImage) {
         playerChooseMenu.hidden = true
         heartImg.dimImgViewAndDisable(dimming: true)
         foodImg.dimImgViewAndDisable(dimming: true)
@@ -96,22 +102,21 @@ class ViewController: UIViewController {
             skull.dimImgView(dimming: true)
         }
         
-        model.startGame(withPlayer: index)
+        model.startGame(withPet: pet)
         
         flowerRockImg.image = image
         
-        let player = model.player
-        petImg.setPlayer(player.0, deadCount: player.1)
+        setPet()
         
         newItem()
     }
     
     @IBAction func playerGolem(sender: AnyObject) {
-        startGame(0, image: UIImage(named: "rock.png")!)
+        startGame(.Golem, image: UIImage(named: "rock.png")!)
     }
     
     @IBAction func playerSnail(sender: AnyObject) {
-        startGame(1, image: UIImage(named: "plant.png")!)
+        startGame(.Snail, image: UIImage(named: "plant.png")!)
     }
     
 }
