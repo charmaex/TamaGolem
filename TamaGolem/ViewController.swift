@@ -43,6 +43,10 @@ class ViewController: UIViewController {
         
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     func newItem() {
         let rand = arc4random_uniform(2)
         
