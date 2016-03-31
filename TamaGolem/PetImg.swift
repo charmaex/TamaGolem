@@ -57,7 +57,7 @@ class PetImg: UIImageView {
         
         var imageList = [UIImage]()
         
-        for var x = 1; x <= imageCount; x++ {
+        for  x in 1...imageCount {
             guard let img = UIImage(named: "\(name)_\(type.rawValue)\(x).png") else {
                 continue
             }

@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         heartImg.targetView = petImg
         foodImg.targetView = petImg
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "itemDropped:", name: "droppedOnTarget", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "petLostLife", name: "petLostLife", object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "newItem", name: "petHappy", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.itemDropped(_:)), name: "droppedOnTarget", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.petLostLife), name: "petLostLife", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.newItem), name: "petHappy", object: nil)
         
     }
     

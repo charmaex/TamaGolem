@@ -82,7 +82,7 @@ class Model: NSObject {
         if _itemDropped {
             petHappy()
         } else {
-            _lifes++
+            _lifes += 1
             sfxSkull.play()
             
             if lifes == MAX_LIFES {
@@ -123,7 +123,7 @@ class Model: NSObject {
         
         let timeInterval = Double(MAX_LIFES - lifes)
         
-        _timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: "changeGame", userInfo: nil, repeats: true)
+        _timer = NSTimer.scheduledTimerWithTimeInterval(timeInterval, target: self, selector: #selector(Model.changeGame), userInfo: nil, repeats: true)
     }
     
     private func petHappy() {
